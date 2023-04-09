@@ -1,0 +1,33 @@
+@import '@radix-ui/colors/blackA.css';
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+
+    gap: 2em;
+}
+
+.DialogOverlay {
+  background-color: hsla(0, 0%, 0%, 0.439);
+  position: fixed;
+  inset: 0;
+}
+
+.DialogContent {
+  background-color: white;
+  border-radius: 6px;
+  width: 90vw;
+  position: fixed;
+  left: 50%;
+  max-width: 450px;
+  max-height: 85vh;
+  padding: 25px;
+  color: black;
+}
