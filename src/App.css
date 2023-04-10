@@ -30,4 +30,35 @@
   max-height: 85vh;
   padding: 25px;
   color: black;
+  transition: opacity 500ms, transform 500ms ease-out;
+  opacity: 0;
+  transform: translateY(1000px);
 }
+
+.DialogContent.fade-enter, .DialogContent.fade-appear {
+    opacity: 0;
+    transform: translateY(1000px);
+}
+
+.DialogContent.fade-enter-active, .DialogContent.fade-appear-active {
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+.DialogContent.fade-enter-done {
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+.DialogContent.fade-exit {
+    opacity: 1;
+}
+
+.DialogContent.fade-exit-active {
+    opacity: 0;
+    transform: translateY(1000px);
+}
+
+.DialogContent.fade-enter-done {
+}
+
